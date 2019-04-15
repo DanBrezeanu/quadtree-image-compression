@@ -1,0 +1,41 @@
+Am implementat compresia fisierelor construind un arbore,
+folosind un vector de tipul QuadtreeNode.
+Valorile RGB citite din fisierul .ppm le-am pus intr-o matrice de tip RGB
+(3 unsigned char, pentru red, green, blue).
+
+Scorul de similitudine l-am calculat in functia getSubMatrixScore.
+Functia getSubMatrixScore calculeaza valorea medie si o atribuie nodului curent.
+
+Daca valoarea scorului de similitudine este mai mare ca pragul impus,
+se va diviza submatricea curenta in 4, atribuind campurilor top_left, top_right,
+bottom_right si bottom_left urmatoarele valori nefolosite(in ordine consecutiva).
+
+Odata cu completarea campurilor, se vor completa si coordonatele X si Y pentru
+coltul din stanga-sus a submatricilor in care a fost impartita subamtricea curenta.
+
+Daca valoarea scorului de similitudine este mai mic ca pragul impus, atunci
+campurile top_left, top_right, bottom_right, bottom_left vor fi completate cu -1.
+
+Am implementat decompresia fisierului, citind arborele, in forma vectorului de
+tip QuadtreeNode. Folosind functia parseTree, care parcurge arborele recursiv.
+Daca in recurenta va intalni o frunza, atunci va completa matricea de pixeli cu
+submatricea reprezentata de nodul frunza. La sfarsit, functia va afisa matricea
+de pixeli, in mod binar, in fisierul decomprimat.
+
+Am implementat oglindirea imaginii folosind compresia fiserului in functie
+de pragul impus, singura diferenta fiind ca:
+- pentru oglindrea verticala, fiii nodurilor vor fi pusi in ordinea
+  bottom_left, bottom_right, top_right, top_left.(mirrorImageVertically)
+- pentru oglindirea orizontala, fiii nodurilor vor fi pusi in ordinea
+  top_right, top_left, bottom_left, bottom_right.(mirrorImageHorizontally)
+Dupa aceasta compresie, voi construi din arbore matricea de pixeli, respectand
+ordinea mai sus mentionata. (in functia decompressMirroredImage)
+La final afisez matricea de pixeli, in binar, in fisierul de iesire dat.
+
+Am implentat suprapunerea imaginilor, construind arborele pentru fiecare imagine
+in functie de pragul impus (buildTree). Folosind arborii de compresie, voi
+construi matricele de pixeli pentru fiecare imagine (decompressImageForMerge).
+Matricea de pixeli rezultanta, pentru imaginea realizata prin suprapunere,
+va lua valori egale cu media aritmetica a valorilor din matricele pentru cele
+doua imagini (mergeImages). La final, voi afisa matricea de pixel rezultata,
+in binar, in fisierul de iesire.
