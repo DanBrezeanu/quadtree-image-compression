@@ -18,9 +18,7 @@ pixel_map.o: pixel_map.c
 zip:
 	zip quadTreeCompression.zip main.c pixel_map.c pixel_map.h
 	zip -r quadTreeCompression.zip Images/*
-	zip quadTreeCompression.zip COMPILING\ OPTIONS Makefile README checker.sh
-run:
-	./$(EXEC)
+	zip quadTreeCompression.zip Makefile README.md checker.sh
 
 clean:
 	rm -rf $(EXEC) *.o
