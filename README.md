@@ -33,7 +33,7 @@ Options for running:
 
 
 __ALL IMAGES MUST BE P6 PPM FILES__
-
+__Image headers must NOT contain comments__
 ### Examples
 
 | Original files   | Compressed Image (t = 80) | Mirrored Vertically | Mirrored Horizontally | Merged |
