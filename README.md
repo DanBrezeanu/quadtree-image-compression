@@ -36,7 +36,7 @@ __ALL IMAGES MUST BE P6 PPM FILES__
 
 ### Examples
 
-| Original files   | Compressed Image (t = 80) | 
-|------------|-------------| 
-| ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/original_sailboat.PNG) | image2 |
-|  ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/original_lenna.PNG) | image2 |
+| Original files   | Compressed Image (t = 80) | Mirrored Vertically | Mirrored Horizontally | Merged |
+|------------|-------------|-------------|-------------|-------------|
+| ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/original_sailboat.PNG) | ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/decompressed_sailboat_80.PNG) | ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/mirror_v_sailboat.PNG) | ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/mirror_h_sailboat.PNG) | ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/merge_lenna_sailboat.PNG) | 
+|  ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/original_lenna.PNG) | ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/decompressed_lenna_80.PNG) | ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/mirror_v_lenna.PNG) | ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/mirror_h_lenna.PNG) | ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/merge_lenna_sailboat.PNG) |
