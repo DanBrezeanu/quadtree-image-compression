@@ -38,5 +38,5 @@ __ALL IMAGES MUST BE P6 PPM FILES__
 
 | Original files   | Compressed Image (t = 80) | 
 |------------|-------------| 
-| ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/original_sailboat.PNG) | image2 |
-|  ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/original_lenna.PNG) | image2 |
+| ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/original_sailboat.PNG) | image2 |
+|  ![alt text](https://raw.githubusercontent.com/DanBrezeanu/quadtree-image-compression/master/screenshots/original_lenna.PNG) | image2 |
